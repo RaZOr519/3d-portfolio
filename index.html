@@ -9,16 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #F5F3EC;
-      --surface: #FFFFFF;
-      --surface-subtle: #ECE8DD;
-      --text: #101114;
-      --text-muted: #555860;
-      --text-light: #7E838F;
-      --border: rgba(16, 17, 20, 0.12);
-      --border-strong: #101114;
-      --cobalt: #0038FF;
-      --orange: #FF4400;
+      --bg: #14161B;
+      --surface: #1B1E26;
+      --surface-subtle: #242833;
+      --text: #EDEDF0;
+      --text-muted: #9DA3AF;
+      --text-light: #6E7582;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.16);
+      --cobalt: #85A3FF;
+      --orange: #FF8F5C;
+      --accent-soft: rgba(133, 163, 255, 0.14);
       --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       --font-mono: 'Space Mono', monospace;
     }
@@ -47,7 +48,7 @@
 
     /* HEADER */
     header {
-      background: rgba(245, 243, 236, 0.94);
+      background: rgba(20, 22, 27, 0.92);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       position: sticky;
@@ -81,7 +82,8 @@
       color: var(--cobalt);
       font-weight: 700;
       text-transform: uppercase;
-      background: rgba(0, 56, 255, 0.08);
+      background: var(--accent-soft);
+      border: 1px solid rgba(133, 163, 255, 0.25);
       padding: 3px 8px;
       border-radius: 999px;
     }
@@ -108,19 +110,34 @@
     }
     .header-cta {
       background: var(--orange);
-      color: #fff !important;
-      padding: 9px 18px;
-      border-radius: 6px;
+      color: #14161B !important;
+      padding: 8px 18px;
+      border-radius: 999px;
       font-weight: 700;
-      font-size: 0.85rem;
-      transition: transform 0.15s ease, opacity 0.15s ease;
+      font-size: 0.84rem;
+      letter-spacing: -0.01em;
+      transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
     .header-cta:hover {
-      opacity: 0.92;
+      opacity: 0.95;
       transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(255, 143, 92, 0.25);
     }
     @media (max-width: 860px) {
+      header { padding: 0; }
+      .header-inner { height: 60px; }
       nav a:not(.header-cta) { display: none; }
+      .brand-name { font-size: 0.96rem; }
+      .status-dot { display: none; }
+      .header-cta {
+        padding: 6px 14px;
+        font-size: 0.78rem;
+        font-weight: 700;
+      }
     }
 
     /* HERO WITH BIRDS ANIMATION BACKGROUND */
@@ -137,7 +154,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      opacity: 0.10;
+      opacity: 0.16; mix-blend-mode: screen;
       pointer-events: none;
       z-index: 1;
       filter: grayscale(20%);
@@ -197,21 +214,22 @@
     }
     .btn-orange {
       background: var(--orange);
-      color: #fff;
+      color: #14161B;
+      font-weight: 800;
       border: 1px solid var(--orange);
     }
     .btn-orange:hover {
-      background: #e63d00;
+      background: #ffa477;
       transform: translateY(-1px);
     }
     .btn-white {
       background: var(--surface);
       color: var(--text);
-      border: 1px solid var(--border);
+      border: 1px solid var(--border-strong);
     }
     .btn-white:hover {
-      background: #fff;
-      border-color: var(--text);
+      background: var(--surface-subtle);
+      border-color: var(--cobalt);
     }
     .btn-wa {
       background: #25D366;
@@ -534,22 +552,23 @@
       position: relative;
     }
     .plan-tile.featured-blue {
-      background: #FFFFFF;
+      background: var(--surface);
       border: 2px solid var(--cobalt);
+      box-shadow: 0 0 28px rgba(133, 163, 255, 0.10);
     }
     .plan-tile.custom-white {
-      background: #FFFFFF;
-      border: 1px solid var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border-strong);
     }
     .pill-highlight {
       position: absolute;
       top: -12px;
       right: 20px;
       background: var(--cobalt);
-      color: #fff;
+      color: #14161B;
       font-size: 0.7rem;
-      font-weight: 700;
-      padding: 3px 10px;
+      font-weight: 800;
+      padding: 4px 12px;
       border-radius: 999px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -671,7 +690,7 @@
     }
     .contact-tile:hover {
       border-color: var(--cobalt);
-      background: #fff;
+      background: var(--surface-subtle);
     }
     .tile-icon {
       width: 40px;
@@ -725,9 +744,9 @@
       transition: border-color 0.15s ease;
     }
     input:focus, select:focus, textarea:focus {
-      background: #fff;
+      background: var(--surface-subtle);
       border-color: var(--cobalt);
-      box-shadow: 0 0 0 3px rgba(0, 56, 255, 0.08);
+      box-shadow: 0 0 0 3px rgba(133, 163, 255, 0.15);
     }
     textarea {
       resize: vertical;
