@@ -14,7 +14,8 @@
   <meta property="og:url" content="https://3d-portfolio-ra-z-or519s-projects.vercel.app/">
   <meta property="og:title" content="Sachin Dewthuru // Premium 3D Product Animation & CGI Production">
   <meta property="og:description" content="Helping drinkware brands transform product collections into cinematic campaigns, scalable product visuals and high-quality digital assets.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta property="og:image" content="https://3d-portfolio-nine-sable.vercel.app/03_Pattern_Wraps_Art_Series/Image%2004P.jpg">
+  <meta name="twitter:image" content="https://3d-portfolio-nine-sable.vercel.app/03_Pattern_Wraps_Art_Series/Image%2004P.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -288,25 +289,31 @@
       .hero-meta-grid { grid-template-columns: 1fr; }
     }
 
-    /* CLIENT LEDGER (TYPOGRAPHIC CREDITS) */
+    /* CLIENT LEDGER (CENTER ALIGNED & PROMINENT) */
     .clients-strip {
-      padding: 44px 0;
+      padding: 56px 0;
       border-bottom: 1px solid var(--border);
       background: var(--surface);
+      text-align: center;
     }
     .clients-label {
       font-family: var(--font-mono);
-      font-size: 0.75rem;
+      font-size: 0.82rem;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-light);
-      margin-bottom: 18px;
+      letter-spacing: 0.12em;
+      color: var(--cobalt);
+      margin-bottom: 24px;
+      text-align: center;
     }
     .clients-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 16px 36px;
+      gap: 18px 40px;
       align-items: center;
+      justify-content: center;
+      max-width: 1100px;
+      margin: 0 auto;
     }
     .client-name {
       font-weight: 700;
@@ -972,42 +979,42 @@
       letter-spacing: -0.04em;
     }
 
-    /* POSITIONING PILL GRID */
+    /* POSITIONING PILL GRID (PROMINENT CENTERED TITLE CARDS) */
     .positioning-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 16px;
-      margin-top: 32px;
+      margin-top: 36px;
     }
     .positioning-card {
       background: var(--surface);
-      border: 1px solid var(--border);
+      border: 1px solid var(--border-strong);
       border-radius: 8px;
-      padding: 20px 18px;
+      padding: 24px 18px;
       display: flex;
-      flex-direction: column;
-      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 96px;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     }
-    .positioning-icon {
-      font-size: 1.3rem;
-      color: var(--cobalt);
+    .positioning-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--cobalt);
+      box-shadow: 0 4px 18px rgba(133, 163, 255, 0.12);
     }
     .positioning-title {
-      font-size: 0.92rem;
+      font-size: 1.05rem;
       font-weight: 800;
-      letter-spacing: -0.01em;
-      line-height: 1.25;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
       color: var(--text);
-    }
-    .positioning-desc {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      line-height: 1.4;
+      text-align: center;
     }
     @media (max-width: 1024px) {
-      .positioning-grid { grid-template-columns: repeat(2, 1fr); }
+      .positioning-grid { grid-template-columns: repeat(3, 1fr); }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 640px) {
       .positioning-grid { grid-template-columns: 1fr; }
     }
 
@@ -1257,6 +1264,7 @@
         <span class="status-dot"><span class="dot"></span> Portfolio</span>
       </a>
       <nav>
+        <a href="#pattern-packaging">Manufacturing & Retail</a>
         <a href="#capabilities">Capabilities</a>
         <a href="#campaign-launch">Campaigns</a>
         <a href="#360-turntables">360 Renders</a>
@@ -1312,29 +1320,19 @@
       <!-- STRATEGIC POSITIONING PILLARS -->
       <div class="positioning-grid">
         <div class="positioning-card">
-          <div class="positioning-icon">✦</div>
-          <div class="positioning-title">Experienced CGI Specialist</div>
-          <div class="positioning-desc">Photorealistic lighting, cylindrical UV wraps, and fluid physics.</div>
+          <h3 class="positioning-title">Experienced CGI Specialist</h3>
         </div>
         <div class="positioning-card">
-          <div class="positioning-icon">✦</div>
-          <div class="positioning-title">Outsourced Production Partner</div>
-          <div class="positioning-desc">Your dedicated 3D team without studio overhead or payroll.</div>
+          <h3 class="positioning-title">Outsourced Production Partner</h3>
         </div>
         <div class="positioning-card">
-          <div class="positioning-icon">✦</div>
-          <div class="positioning-title">Multi-SKU & Colorway Engine</div>
-          <div class="positioning-desc">Instant rollout across 50+ finishes, prints, and bottle sizes.</div>
+          <h3 class="positioning-title">Multi-SKU & Colorway Engine</h3>
         </div>
         <div class="positioning-card">
-          <div class="positioning-icon">✦</div>
-          <div class="positioning-title">Reliable Creative Resource</div>
-          <div class="positioning-desc">3+ years delivering recurring launches on predictable monthly cycles.</div>
+          <h3 class="positioning-title">Reliable Creative Resource</h3>
         </div>
         <div class="positioning-card">
-          <div class="positioning-icon">✦</div>
-          <div class="positioning-title">Commercial Marketing Focus</div>
-          <div class="positioning-desc">Visuals engineered to drive sales across social ads and PDPs.</div>
+          <h3 class="positioning-title">Commercial Marketing Focus</h3>
         </div>
       </div>
     </div>
@@ -1360,264 +1358,11 @@
   </div>
 
 
-  <!-- SECTION: WHAT I CAN PRODUCE -->
-  <section id="capabilities">
-    <div class="container">
-      <div class="section-head">
-        <div class="section-tag">// PRODUCTION SCOPE</div>
-        <h2 class="section-title">What I Can Produce</h2>
-        <p class="section-subtitle">Full-spectrum 3D CGI production built specifically for consumer goods, insulated drinkware, and packaging brands.</p>
-      </div>
-
-      <div class="capabilities-grid">
-        
-        <div class="cap-card">
-          <div>
-            <div class="cap-num">01 // MOTION</div>
-            <div class="cap-h3">Cinematic Product Animation</div>
-            <div class="cap-p">30s commercial hero films with macro textures, camera sweeps, and simulated fluid/particle VFX.</div>
-          </div>
-        </div>
-
-        <div class="cap-card">
-          <div>
-            <div class="cap-num">02 // E-COMMERCE</div>
-            <div class="cap-h3">E-Commerce Visualization</div>
-            <div class="cap-p">Crisp, studio-lit packshots on marble, walnut, and steel pedestals for PDPs and catalogs.</div>
-          </div>
-        </div>
-
-        <div class="cap-card">
-          <div>
-            <div class="cap-num">03 // CATALOG SCALE</div>
-            <div class="cap-h3">Multi-SKU & Colorways</div>
-            <div class="cap-p">Render endless powder coatings, brushed finishes, and artist prints from one master 3D model.</div>
-          </div>
-        </div>
-
-        <div class="cap-card">
-          <div>
-            <div class="cap-num">04 // ENGINEERING</div>
-            <div class="cap-h3">Product Feature Animation</div>
-            <div class="cap-p">Exploded CAD views highlighting vacuum insulation, leak-proof lids, and cylindrical UV printing.</div>
-          </div>
-        </div>
-
-        <div class="cap-card">
-          <div>
-            <div class="cap-num">05 // SOCIALS & ADS</div>
-            <div class="cap-h3">Social Campaign Content</div>
-            <div class="cap-p">High-volume vertical reels (9:16) and feed posts (4:5) paired with AI lifestyle staging.</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 01: CAMPAIGN LAUNCH (ALL 6 VIDEOS AUTOPLAYING IN A ROW) -->
-  <section id="campaign-launch">
-    <div class="container">
-      <div class="section-head">
-        <div class="section-tag">01 // Social Campaign Launch Suite</div>
-        <h2 class="section-title">Campaign Launch Animations</h2>
-        <p class="section-subtitle">Complete collection of mobile launch ads from the campaign archive. Autoplaying silently in sequence—scroll horizontally to view all cuts.</p>
-      </div>
-
-      <div class="campaign-scroll-row">
-        
-        <!-- Video 1 -->
-        <div class="campaign-video-card">
-          <div class="campaign-video-wrap">
-            <video autoplay muted loop playsinline poster="thumbnails/Animation01_HQ_mid.jpg">
-              <source src="02_Campaign_Launch_Animations/Animation01_HQ.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="campaign-card-meta">
-            <div class="campaign-card-cat">Campaign Launch 01</div>
-            <div class="campaign-card-title">Season Collection Master Ad (4:5)</div>
-          </div>
-        </div>
-
-        <!-- Video 2 -->
-        <div class="campaign-video-card">
-          <div class="campaign-video-wrap">
-            <video autoplay muted loop playsinline poster="thumbnails/Camp01_2s.jpg">
-              <source src="02_Campaign_Launch_Animations/Animation01R_HQ.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="campaign-card-meta">
-            <div class="campaign-card-cat">Campaign Cut 02</div>
-            <div class="campaign-card-title">Colorway Transition Edit</div>
-          </div>
-        </div>
-
-        <!-- Video 3 -->
-        <div class="campaign-video-card">
-          <div class="campaign-video-wrap">
-            <video autoplay muted loop playsinline poster="thumbnails/Animation02_HQ_mid.jpg">
-              <source src="02_Campaign_Launch_Animations/Animation02_HQ.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="campaign-card-meta">
-            <div class="campaign-card-cat">Feature Focus 03</div>
-            <div class="campaign-card-title">Vacuum Seal & Lid Demonstration</div>
-          </div>
-        </div>
-
-        <!-- Video 4 -->
-        <div class="campaign-video-card">
-          <div class="campaign-video-wrap">
-            <video autoplay muted loop playsinline poster="thumbnails/Animation04_HQ_mid.jpg">
-              <source src="02_Campaign_Launch_Animations/Animation04R_HQ.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="campaign-card-meta">
-            <div class="campaign-card-cat">Dynamic Pacing 04</div>
-            <div class="campaign-card-title">Kinetic Social Media Hook Cut</div>
-          </div>
-        </div>
-
-        <!-- Video 5 -->
-        <div class="campaign-video-card">
-          <div class="campaign-video-wrap">
-            <video autoplay muted loop playsinline poster="thumbnails/MugAnimation_01_mid.jpg">
-              <source src="02_Campaign_Launch_Animations/MugAnimation_01.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="campaign-card-meta">
-            <div class="campaign-card-cat">Tumbler Line 05</div>
-            <div class="campaign-card-title">Travel Mug Launch Animation</div>
-          </div>
-        </div>
-
-        <!-- Video 6 -->
-        <div class="campaign-video-card">
-          <div class="campaign-video-wrap">
-            <video autoplay muted loop playsinline poster="thumbnails/MugAnimation_01_mid.jpg">
-              <source src="02_Campaign_Launch_Animations/MugAnimation_03.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="campaign-card-meta">
-            <div class="campaign-card-cat">Ergonomics 06</div>
-            <div class="campaign-card-title">Handle & Tactile Grip Close-up</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 02: 360 TURNTABLES -->
-  <section id="360-turntables" class="turntables-section">
-    <div class="container">
-      <div class="section-head">
-        <div class="section-tag">02 // Multi-SKU Colorway & E-Commerce</div>
-        <h2 class="section-title">360 Renders</h2>
-        <p class="section-subtitle">Square 2K master loops (2000×2000) for Shopify 360 interactive viewers, PDP product galleries, and colorway selectors across materials and art wraps.</p>
-      </div>
-
-      <div class="media-grid-3">
-        
-        <div class="media-card">
-          <div class="video-holder square">
-            <video autoplay muted loop playsinline poster="thumbnails/StarryHQV1_mid.jpg">
-              <source src="06_Multi_SKU_Colorway_Turntables/StarryHQV1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="card-caption">
-            <div>
-              <div class="caption-cat">Museum Licensed Wrap</div>
-              <div class="caption-h3">Van Gogh – Starry Night (360°)</div>
-              <div class="caption-p">Seamless cylindrical UV mapping across the tapered bottle neck with micro-bump brushstroke detail.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="media-card">
-          <div class="video-holder square">
-            <video autoplay muted loop playsinline poster="thumbnails/2_mid.jpg">
-              <source src="06_Multi_SKU_Colorway_Turntables/SunflowerHQV1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="card-caption">
-            <div>
-              <div class="caption-cat">Museum Licensed Wrap</div>
-              <div class="caption-h3">Van Gogh – Sunflowers (360°)</div>
-              <div class="caption-p">Archival color accuracy matching Pantone swatches approved for official museum distribution.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="media-card">
-          <div class="video-holder square">
-            <video autoplay muted loop playsinline poster="thumbnails/RSilverHQ_mid.jpg">
-              <source src="06_Multi_SKU_Colorway_Turntables/SilverHQ.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="card-caption">
-            <div>
-              <div class="caption-cat">Material Benchmark</div>
-              <div class="caption-h3">Brushed Stainless Steel (360°)</div>
-              <div class="caption-p">Anisotropic brushed metallic shader study with transparent lid and silicone gasket fidelity.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="media-card">
-          <div class="video-holder square">
-            <video autoplay muted loop playsinline poster="thumbnails/VincentHQV1_mid.jpg">
-              <source src="06_Multi_SKU_Colorway_Turntables/VincentHQV1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="card-caption">
-            <div>
-              <div class="caption-cat">Artist Series</div>
-              <div class="caption-h3">Van Gogh – Vincent Portrait (360°)</div>
-              <div class="caption-p">Continuous texture wrap around curved stainless steel with zero pinching or seam artifacts.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="media-card">
-          <div class="video-holder square">
-            <video autoplay muted loop playsinline poster="thumbnails/AlmondHQ_mid.jpg">
-              <source src="06_Multi_SKU_Colorway_Turntables/AlmondHQ.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="card-caption">
-            <div>
-              <div class="caption-cat">Core Collection</div>
-              <div class="caption-h3">Almond Cream Satin Finish (360°)</div>
-              <div class="caption-p">Subtle specular reflection on matte powder coating under calibrated studio softbox lights.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="media-card">
-          <div class="video-holder square">
-            <video autoplay muted loop playsinline poster="thumbnails/2_mid.jpg">
-              <source src="06_Multi_SKU_Colorway_Turntables/BlackHQ.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="card-caption">
-            <div>
-              <div class="caption-cat">Matte Powder Coat</div>
-              <div class="caption-h3">Stealth Matte Black (360°)</div>
-              <div class="caption-p">Micro-stipple powder coat surface shader with debossed stainless steel brand emblem.</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 03: PATTERN WRAPS, MANUFACTURING & PACKAGING -->
+    <!-- SECTION 03: PATTERN WRAPS, MANUFACTURING & PACKAGING -->
   <section id="pattern-packaging">
     <div class="container">
       <div class="section-head">
-        <div class="section-tag">03 // Industrial CGI & Retail Packaging</div>
+        <div class="section-tag">01 // Industrial CGI & Retail Packaging</div>
         <h2 class="section-title">Pattern Wraps, Manufacturing & Retail Packaging</h2>
         <p class="section-subtitle">Visualizing intricate cylindrical art wrapping, high-speed rotary printing machines, and premium retail packaging cartons.</p>
       </div>
@@ -1736,6 +1481,229 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+
+<!-- SECTION: WHAT I CAN PRODUCE -->
+  <section id="capabilities">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">// PRODUCTION SCOPE</div>
+        <h2 class="section-title">What I Can Produce</h2>
+        <p class="section-subtitle">Full-spectrum 3D CGI production built specifically for consumer goods, insulated drinkware, and packaging brands.</p>
+      </div>
+
+      <div class="capabilities-grid">
+        
+        <div class="cap-card">
+          <div>
+            <div class="cap-num">01 // MOTION</div>
+            <div class="cap-h3">Cinematic Product Animation</div>
+            <div class="cap-p">30s commercial hero films with macro textures, camera sweeps, and simulated fluid/particle VFX.</div>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div>
+            <div class="cap-num">02 // E-COMMERCE</div>
+            <div class="cap-h3">E-Commerce Visualization</div>
+            <div class="cap-p">Crisp, studio-lit packshots on marble, walnut, and steel pedestals for PDPs and catalogs.</div>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div>
+            <div class="cap-num">03 // CATALOG SCALE</div>
+            <div class="cap-h3">Multi-SKU & Colorways</div>
+            <div class="cap-p">Render endless powder coatings, brushed finishes, and artist prints from one master 3D model.</div>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div>
+            <div class="cap-num">04 // ENGINEERING</div>
+            <div class="cap-h3">Product Feature Animation</div>
+            <div class="cap-p">Exploded CAD views highlighting vacuum insulation, leak-proof lids, and cylindrical UV printing.</div>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div>
+            <div class="cap-num">05 // SOCIALS & ADS</div>
+            <div class="cap-h3">Social Campaign Content</div>
+            <div class="cap-p">High-volume vertical reels (9:16) and feed posts (4:5) paired with AI lifestyle staging.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: CAMPAIGN LAUNCH ANIMATIONS (CLEAN BENTO GRID - NO EXPLAINER TEXT) -->
+  <section id="campaign-launch">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">// Commercial Motion</div>
+        <h2 class="section-title">Campaign Launch Animations</h2>
+      </div>
+
+      <div class="media-grid-3">
+        
+        <div class="media-card">
+          <div class="video-holder square">
+            <video autoplay muted loop playsinline poster="thumbnails/Animation01_HQ_mid.jpg">
+              <source src="02_Campaign_Launch_Animations/Animation01_HQ.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="video-holder square">
+            <video autoplay muted loop playsinline poster="thumbnails/Camp01_2s.jpg">
+              <source src="02_Campaign_Launch_Animations/Animation01R_HQ.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="video-holder square">
+            <video autoplay muted loop playsinline poster="thumbnails/Animation02_HQ_mid.jpg">
+              <source src="02_Campaign_Launch_Animations/Animation02_HQ.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="video-holder square">
+            <video autoplay muted loop playsinline poster="thumbnails/Animation04_HQ_mid.jpg">
+              <source src="02_Campaign_Launch_Animations/Animation04R_HQ.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="video-holder square">
+            <video autoplay muted loop playsinline poster="thumbnails/MugAnimation_01_mid.jpg">
+              <source src="02_Campaign_Launch_Animations/MugAnimation_01.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="video-holder square">
+            <video autoplay muted loop playsinline poster="thumbnails/MugAnimation_01_mid.jpg">
+              <source src="02_Campaign_Launch_Animations/MugAnimation_03.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 02: 360 TURNTABLES -->
+  <section id="360-turntables" class="turntables-section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">02 // Multi-SKU Colorway & E-Commerce</div>
+        <h2 class="section-title">360 Renders</h2>
+        <p class="section-subtitle">Square 2K master loops (2000×2000) for Shopify 360 interactive viewers, PDP product galleries, and colorway selectors across materials and art wraps.</p>
+      </div>
+
+      <div class="media-grid-3">
+        
+        <div class="media-card">
+          <div class="video-holder square">
+            <video autoplay muted loop playsinline poster="thumbnails/StarryHQV1_mid.jpg">
+              <source src="06_Multi_SKU_Colorway_Turntables/StarryHQV1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-caption">
+            <div>
+              <div class="caption-cat">Museum Licensed Wrap</div>
+              <div class="caption-h3">Van Gogh – Starry Night (360°)</div>
+              <div class="caption-p">Seamless cylindrical UV mapping across the tapered bottle neck with micro-bump brushstroke detail.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="video-holder square">
+            <video autoplay muted loop playsinline poster="thumbnails/2_mid.jpg">
+              <source src="06_Multi_SKU_Colorway_Turntables/SunflowerHQV1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-caption">
+            <div>
+              <div class="caption-cat">Museum Licensed Wrap</div>
+              <div class="caption-h3">Van Gogh – Sunflowers (360°)</div>
+              <div class="caption-p">Archival color accuracy matching Pantone swatches approved for official museum distribution.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="video-holder square">
+            <video autoplay muted loop playsinline poster="thumbnails/RSilverHQ_mid.jpg">
+              <source src="06_Multi_SKU_Colorway_Turntables/SilverHQ.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-caption">
+            <div>
+              <div class="caption-cat">Material Benchmark</div>
+              <div class="caption-h3">Brushed Stainless Steel (360°)</div>
+              <div class="caption-p">Anisotropic brushed metallic shader study with transparent lid and silicone gasket fidelity.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="video-holder square">
+            <video autoplay muted loop playsinline poster="thumbnails/VincentHQV1_mid.jpg">
+              <source src="06_Multi_SKU_Colorway_Turntables/VincentHQV1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-caption">
+            <div>
+              <div class="caption-cat">Artist Series</div>
+              <div class="caption-h3">Van Gogh – Vincent Portrait (360°)</div>
+              <div class="caption-p">Continuous texture wrap around curved stainless steel with zero pinching or seam artifacts.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="video-holder square">
+            <video autoplay muted loop playsinline poster="thumbnails/AlmondHQ_mid.jpg">
+              <source src="06_Multi_SKU_Colorway_Turntables/AlmondHQ.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-caption">
+            <div>
+              <div class="caption-cat">Core Collection</div>
+              <div class="caption-h3">Almond Cream Satin Finish (360°)</div>
+              <div class="caption-p">Subtle specular reflection on matte powder coating under calibrated studio softbox lights.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="video-holder square">
+            <video autoplay muted loop playsinline poster="thumbnails/2_mid.jpg">
+              <source src="06_Multi_SKU_Colorway_Turntables/BlackHQ.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-caption">
+            <div>
+              <div class="caption-cat">Matte Powder Coat</div>
+              <div class="caption-h3">Stealth Matte Black (360°)</div>
+              <div class="caption-p">Micro-stipple powder coat surface shader with debossed stainless steel brand emblem.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -1919,16 +1887,12 @@
       
       <!-- DEDICATED MONTHLY PARTNERSHIP FEATURE SECTION -->
       <div class="partnership-callout">
-        <div class="partnership-intro-grid">
-          <div>
-            <div class="section-tag">// ONGOING PRODUCTION PARTNERSHIP</div>
-            <h2 class="partnership-h2">Why work with a dedicated CGI partner?</h2>
-          </div>
-          <div>
-            <p class="partnership-lead">
-              Embed a reliable 3D studio directly into your marketing calendar without costly photo shoots, sample shipping, or freelancer onboarding.
-            </p>
-          </div>
+        <div style="margin-bottom: 28px;">
+          <div class="section-tag" style="margin-bottom: 8px;">// ONGOING PRODUCTION PARTNERSHIP</div>
+          <h2 class="partnership-h2" style="margin-bottom: 12px;">Why work with a dedicated CGI partner?</h2>
+          <p style="font-size: 1.05rem; color: var(--text-muted); max-width: 800px; line-height: 1.5;">
+            Embed a reliable 3D studio directly into your marketing calendar without costly photo shoots, sample shipping, or freelancer onboarding.
+          </p>
         </div>
 
         <div class="partnership-benefits-grid">
