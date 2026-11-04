@@ -4,6 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sachin Dewthuru // Premium 3D Product Animation & CGI Production for Consumer Brands</title>
+  <meta name="description" content="Dedicated outsourced CGI production partner for drinkware and consumer brands. Transforming collections into cinematic campaigns, 360 e-commerce turntables, and scalable multi-SKU digital assets.">
+  <meta name="keywords" content="3D product animation, CGI production partner, drinkware 3D visualization, bottle 3D render, e-commerce turntables, multi-SKU rendering, product marketing CGI">
+  <meta name="author" content="Sachin Dewthuru">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://3d-portfolio-ra-z-or519s-projects.vercel.app/">
+  <meta property="og:title" content="Sachin Dewthuru // Premium 3D Product Animation & CGI Production">
+  <meta property="og:description" content="Helping drinkware brands transform product collections into cinematic campaigns, scalable product visuals and high-quality digital assets.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1200&h=630&q=80">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sachin Dewthuru // 3D Product Animation & CGI Production">
+  <meta name="twitter:description" content="Outsourced CGI production partner for consumer brands. 360 turntables, cinematic animation, and multi-SKU automation.">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -954,6 +971,247 @@
       line-height: 1;
       letter-spacing: -0.04em;
     }
+
+    /* POSITIONING PILL GRID */
+    .positioning-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .positioning-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .positioning-icon {
+      font-size: 1.3rem;
+      color: var(--cobalt);
+    }
+    .positioning-title {
+      font-size: 0.92rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      color: var(--text);
+    }
+    .positioning-desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    @media (max-width: 1024px) {
+      .positioning-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .positioning-grid { grid-template-columns: 1fr; }
+    }
+
+    /* CAPABILITIES GRID (WHAT I CAN PRODUCE) */
+    .capabilities-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+    .cap-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 26px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, border-color 0.15s ease;
+    }
+    .cap-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--cobalt);
+    }
+    .cap-num {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+    .cap-h3 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+    .cap-p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    @media (max-width: 1100px) {
+      .capabilities-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .capabilities-grid { grid-template-columns: 1fr; }
+    }
+
+    /* PROCESS TIMELINE (HOW WE WORK TOGETHER) */
+    .process-timeline {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 18px;
+      position: relative;
+    }
+    .process-step {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .process-step::after {
+      content: "→";
+      position: absolute;
+      right: -14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--cobalt);
+      z-index: 2;
+    }
+    .process-step:last-child::after {
+      display: none;
+    }
+    .step-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--cobalt);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .step-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .step-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    @media (max-width: 990px) {
+      .process-timeline { grid-template-columns: 1fr; gap: 14px; }
+      .process-step::after {
+        content: "↓";
+        right: 50%;
+        top: auto;
+        bottom: -16px;
+        transform: translateX(50%);
+      }
+    }
+
+    /* DEDICATED PARTNERSHIP SECTION */
+    .partnership-callout {
+      background: linear-gradient(135deg, rgba(133, 163, 255, 0.08) 0%, rgba(255, 143, 92, 0.05) 100%), var(--surface);
+      border: 1px solid var(--border-strong);
+      border-radius: 12px;
+      padding: 48px;
+      margin-bottom: 44px;
+    }
+    .partnership-intro-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1.8fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 36px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .partnership-h2 {
+      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+    }
+    .partnership-lead {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+    .partnership-benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .benefit-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .benefit-check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      border: 1px solid rgba(133, 163, 255, 0.3);
+      color: var(--cobalt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .benefit-text h4 {
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      margin-bottom: 4px;
+    }
+    .benefit-text p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    @media (max-width: 900px) {
+      .partnership-callout { padding: 30px 20px; }
+      .partnership-intro-grid { grid-template-columns: 1fr; gap: 20px; }
+    }
+
+    /* INVITATION CALLOUT BANNER */
+    .launch-invite-strip {
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 36px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      margin-top: 56px;
+    }
+    .invite-text h3 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .invite-text p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+    @media (max-width: 860px) {
+      .launch-invite-strip { flex-direction: column; text-align: center; padding: 28px 20px; }
+    }
+
   </style>
 </head>
 <body>
@@ -999,11 +1257,11 @@
         <span class="status-dot"><span class="dot"></span> Portfolio</span>
       </a>
       <nav>
-        <a href="#campaign-launch">Campaign Launch</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#campaign-launch">Campaigns</a>
         <a href="#360-turntables">360 Renders</a>
-        <a href="#pattern-packaging">Art & Packaging</a>
-        <a href="#stills-gallery">Stills Gallery</a>
-        <a href="#retainers">Retainers</a>
+        <a href="#how-we-work">Process</a>
+        <a href="#retainers">Partnership</a>
         <a href="#contact" class="header-cta">Get in Touch</a>
       </nav>
     </div>
@@ -1050,6 +1308,35 @@
           <div class="meta-desc">No Shipping Delays or Physical Reshoots</div>
         </div>
       </div>
+
+      <!-- STRATEGIC POSITIONING PILLARS -->
+      <div class="positioning-grid">
+        <div class="positioning-card">
+          <div class="positioning-icon">✦</div>
+          <div class="positioning-title">Experienced CGI Specialist</div>
+          <div class="positioning-desc">Deep technical expertise in physical light interaction, cylindrical UV unwrapping, and fluid dynamics.</div>
+        </div>
+        <div class="positioning-card">
+          <div class="positioning-icon">✦</div>
+          <div class="positioning-title">Outsourced Production Partner</div>
+          <div class="positioning-desc">Functions as your dedicated 3D division without the overhead of maintaining an in-house studio team.</div>
+        </div>
+        <div class="positioning-card">
+          <div class="positioning-icon">✦</div>
+          <div class="positioning-title">Multi-SKU & Colorway Engine</div>
+          <div class="positioning-desc">Scalable geometry systems allowing rapid rollout across 50+ finishes, custom artwork prints, and bottle sizes.</div>
+        </div>
+        <div class="positioning-card">
+          <div class="positioning-icon">✦</div>
+          <div class="positioning-title">Reliable Long-Term Creative Resource</div>
+          <div class="positioning-desc">Proven 3+ year continuous partnership delivering recurring seasonal launches on predictable monthly cycles.</div>
+        </div>
+        <div class="positioning-card">
+          <div class="positioning-icon">✦</div>
+          <div class="positioning-title">Commercial Product Marketing</div>
+          <div class="positioning-desc">Visuals engineered specifically to drive conversion across paid social ad creative, retail PDPs, and brand launches.</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1071,6 +1358,62 @@
       </div>
     </div>
   </div>
+
+
+  <!-- SECTION: WHAT I CAN PRODUCE -->
+  <section id="capabilities">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">// PRODUCTION SCOPE</div>
+        <h2 class="section-title">What I Can Produce</h2>
+        <p class="section-subtitle">Full-spectrum 3D CGI production built specifically for consumer goods, insulated drinkware, and packaging brands.</p>
+      </div>
+
+      <div class="capabilities-grid">
+        
+        <div class="cap-card">
+          <div>
+            <div class="cap-num">01 // MOTION</div>
+            <div class="cap-h3">Cinematic Product Animation</div>
+            <div class="cap-p">High-impact 30-second commercial hero films featuring macro material reveals, procedural lighting sweeps, kinetic camera motion, and simulated fluid/particle VFX.</div>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div>
+            <div class="cap-num">02 // E-COMMERCE</div>
+            <div class="cap-h3">E-Commerce Product Visualization</div>
+            <div class="cap-p">Clean, studio-lit packshots on photorealistic pedestals (marble, walnut, industrial steel) engineered for high-converting PDP hero banners and wholesale catalogs.</div>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div>
+            <div class="cap-num">03 // CATALOG SCALE</div>
+            <div class="cap-h3">Multi-SKU & Colorway Visualization</div>
+            <div class="cap-p">Seamless digital twin automation across entire seasonal collections. One master 3D mesh renders unlimited powder coatings, brushed metals, and licensed artist prints without reshoots.</div>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div>
+            <div class="cap-num">04 // ENGINEERING</div>
+            <div class="cap-h3">Product Feature Animation</div>
+            <div class="cap-p">Exploded CAD views and mechanical breakdown motion demonstrating double-wall vacuum insulation, leak-proof silicone gaskets, and rotary cylindrical printing technology.</div>
+          </div>
+        </div>
+
+        <div class="cap-card">
+          <div>
+            <div class="cap-num">05 // SOCIALS & ADS</div>
+            <div class="cap-h3">Social Media Campaign Content</div>
+            <div class="cap-p">High-volume vertical reels (9:16) and feed assets (4:5) paired with AI lifestyle staging (ski slopes, gym athletic sets, modern retail interiors) optimized for TikTok, Meta & YouTube.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- SECTION 01: CAMPAIGN LAUNCH (ALL 6 VIDEOS AUTOPLAYING IN A ROW) -->
   <section id="campaign-launch">
@@ -1514,13 +1857,127 @@
     </div>
   </section>
 
+
+  <!-- SECTION: HOW WE WORK TOGETHER -->
+  <section id="how-we-work">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">// PRODUCTION PIPELINE</div>
+        <h2 class="section-title">How We Work Together</h2>
+        <p class="section-subtitle">A streamlined, stress-free production workflow engineered for marketing teams, creative directors, and fast-moving consumer brands.</p>
+      </div>
+
+      <div class="process-timeline">
+        
+        <div class="process-step">
+          <div class="step-badge">Phase 01</div>
+          <div class="step-title">Brief</div>
+          <div class="step-desc">Share your product silhouette (or physical samples/CAD), vector labels, target launch timeline, and desired deliverable scope.</div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-badge">Phase 02</div>
+          <div class="step-title">Creative Direction</div>
+          <div class="step-desc">Alignment on lighting moodboards, camera choreography, colorway palettes, and lifestyle art direction before rendering.</div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-badge">Phase 03</div>
+          <div class="step-title">Production</div>
+          <div class="step-desc">Full 3D digital twin construction, cylindrical UV label placement, physical shader calibration, and high-fidelity ray tracing.</div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-badge">Phase 04</div>
+          <div class="step-title">Review</div>
+          <div class="step-desc">Structured feedback rounds with timestamped preview links ensuring every material reflection and detail aligns with brand standards.</div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-badge">Phase 05</div>
+          <div class="step-title">Delivery</div>
+          <div class="step-desc">Organized hand-off of web-ready MP4 animations, raw 4K masters, transparent cutouts, and multi-format social exports.</div>
+        </div>
+
+      </div>
+
+      <!-- INVITATION CALLOUT BANNER -->
+      <div class="launch-invite-strip">
+        <div class="invite-text">
+          <h3>Planning Your Next Product Launch?</h3>
+          <p>We invite drinkware brands, consumer goods companies, and creative agencies to discuss upcoming seasonal drops and campaign production.</p>
+        </div>
+        <a href="#contact" class="btn btn-orange" style="flex-shrink: 0; padding: 14px 28px;">Discuss Your Upcoming Project</a>
+      </div>
+
+    </div>
+  </section>
+
   <!-- SECTION 05: RETAINER PACKAGES (UPDATED EXACT SPECIFICATIONS) -->
   <section id="retainers" style="background: var(--surface);">
     <div class="container">
+      
+      <!-- DEDICATED MONTHLY PARTNERSHIP FEATURE SECTION -->
+      <div class="partnership-callout">
+        <div class="partnership-intro-grid">
+          <div>
+            <div class="section-tag">// ONGOING PRODUCTION PARTNERSHIP</div>
+            <h2 class="partnership-h2">Why work with a dedicated CGI partner?</h2>
+          </div>
+          <div>
+            <p class="partnership-lead">
+              Rather than managing ad-hoc freelance gigs or booking costly studio photoshoots for every single colorway drop, a dedicated monthly partnership embeds a seasoned 3D CGI production pipeline directly into your marketing calendar.
+            </p>
+          </div>
+        </div>
+
+        <div class="partnership-benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div class="benefit-text">
+              <h4>No Physical Shoots Needed</h4>
+              <p>Eliminate costly studio bookings, shipping fragile sample bottles across borders, and weather delays for outdoor shoots.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div class="benefit-text">
+              <h4>Consistent Visual Quality</h4>
+              <p>Flawless lighting continuity across all past, present, and future SKU releases and seasonal collection drops.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div class="benefit-text">
+              <h4>Faster Asset Adaptation</h4>
+              <p>Re-render existing 3D bottle twins in new environments, holiday packaging, or promo banners in hours instead of weeks.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div class="benefit-text">
+              <h4>Recurring Campaign Delivery</h4>
+              <p>Steady flow of high-volume social reels, e-commerce turntables, and lifestyle imagery delivered on monthly milestones.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div class="benefit-text">
+              <h4>One Partner Who Knows Your Product</h4>
+              <p>Zero ramp-up time. An artist who understands your exact bottle dimensions, lid mechanisms, and brand aesthetic.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="section-head">
-        <div class="section-tag">05 // Production Packages & Agreements</div>
-        <h2 class="section-title">Starting Production Tiers</h2>
-        <p class="section-subtitle">Predictable, high-volume visual production packages delivered on structured monthly milestones. Custom production agreements available for dedicated brand collaborations.</p>
+        <div class="section-tag">// STARTING POINTS & RETENTION PACKAGES</div>
+        <h2 class="section-title">Monthly Partnership Packages</h2>
+        <p class="section-subtitle">Monthly packages are flexible starting points rather than rigid menus. We calibrate each agreement around your actual product roadmap and SKU release schedule.</p>
       </div>
 
       <div class="plans-flex-grid">
@@ -1666,50 +2123,59 @@
             
             <div class="form-row-2">
               <div>
-                <label for="bName">Brand Name *</label>
-                <input type="text" id="bName" placeholder="e.g. Ocean Bottle, Chilly's" required>
+                <label for="fName">Your Name *</label>
+                <input type="text" id="fName" placeholder="e.g. Alex Morgan" required>
               </div>
               <div>
-                <label for="bUrl">Website / Instagram</label>
-                <input type="text" id="bUrl" placeholder="https://yourbrand.com">
+                <label for="fCompany">Company / Brand *</label>
+                <input type="text" id="fCompany" placeholder="e.g. 24Bottles, Ocean Bottle" required>
               </div>
             </div>
 
             <div class="form-row-2">
               <div>
-                <label for="bEmail">Your Email *</label>
-                <input type="email" id="bEmail" placeholder="name@brand.com" required>
+                <label for="fEmail">Business Email *</label>
+                <input type="email" id="fEmail" placeholder="name@company.com" required>
               </div>
               <div>
-                <label for="bContactPref">Preferred Contact Way *</label>
-                <select id="bContactPref" required>
-                  <option value="WhatsApp / Text Message">WhatsApp / Text Message</option>
-                  <option value="Email (Written Response)">Email (Written Response)</option>
-                  <option value="Quick 15-Min Video Call">Quick 15-Min Video Call</option>
+                <label for="fWebsite">Website URL</label>
+                <input type="text" id="fWebsite" placeholder="https://yourbrand.com">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div>
+                <label for="fProjectType">Project Type *</label>
+                <select id="fProjectType" required>
+                  <option value="Collection Launch / Motion Ads">Collection Launch / Motion Ads</option>
+                  <option value="E-Commerce 360 Turntables & Stills">E-Commerce 360 Turntables & Stills</option>
+                  <option value="Multi-SKU & Colorway Automation">Multi-SKU & Colorway Automation</option>
+                  <option value="Full Production Campaign">Full Production Campaign</option>
+                </select>
+              </div>
+              <div>
+                <label for="fOngoing">Ongoing CGI Production? *</label>
+                <select id="fOngoing" required>
+                  <option value="Yes - Seeking Monthly CGI Partner">Yes — Seeking Dedicated Monthly Partner</option>
+                  <option value="Essential Retainer ($600/mo)">Essential Retainer ($600/month)</option>
+                  <option value="Growth Retainer ($900/mo)">Growth Retainer ($900/month)</option>
+                  <option value="Dedicated Retainer ($1,500+/mo)">Dedicated Retainer ($1,500+/month)</option>
+                  <option value="Custom Production Agreement">Custom Production Agreement</option>
+                  <option value="One-Time Sprint / Single Drop">One-Time Sprint / Single Drop</option>
                 </select>
               </div>
             </div>
 
             <div class="form-field">
-              <label for="bScope">Project Scope / Package</label>
-              <select id="bScope">
-                <option value="Growth ($900/month)">Growth ($900/month) - ⭐ Most Popular</option>
-                <option value="Essential ($600/month)">Essential ($600/month)</option>
-                <option value="Dedicated ($1,500+/month)">Dedicated ($1,500+/month)</option>
-                <option value="Custom Production Agreement">Custom Production Agreement (Tailored Scope)</option>
-              </select>
-            </div>
-
-            <div class="form-field">
-              <label for="bNotes">Project Details & Launch Timeline *</label>
-              <textarea id="bNotes" placeholder="Describe your product silhouette, number of SKUs/labels, target launch date, or link to files..." required></textarea>
+              <label for="fDesc">Brief Project Description *</label>
+              <textarea id="fDesc" placeholder="Briefly describe your products, number of SKUs, target launch date, or any specific creative vision..." required></textarea>
             </div>
 
             <button type="submit" class="btn btn-orange" style="width: 100%; padding: 16px;">
               Send Project Inquiry
             </button>
             <div class="form-submit-note">
-              ✓ Submitting will open your email draft to sdewthuru@gmail.com and copy your details to your clipboard. I typically respond within 24 hours.
+              ✓ Submitting will open your email draft to sdewthuru@gmail.com and copy details to your clipboard. I respond within 24 hours.
             </div>
 
           </form>
@@ -1863,37 +2329,48 @@
     });
 
     function setScope(val) {
-      const select = document.getElementById('bScope');
-      if (select) select.value = val;
+      const ongoing = document.getElementById('fOngoing');
+      if (ongoing) {
+        for (let opt of ongoing.options) {
+          if (opt.value.includes(val) || val.includes(opt.value)) {
+            ongoing.value = opt.value;
+            break;
+          }
+        }
+      }
     }
 
     function handleSend(e) {
       e.preventDefault();
-      const brand = document.getElementById('bName').value;
-      const url = document.getElementById('bUrl').value;
-      const email = document.getElementById('bEmail').value;
-      const pref = document.getElementById('bContactPref').value;
-      const scope = document.getElementById('bScope').value;
-      const notes = document.getElementById('bNotes').value;
+      const name = document.getElementById('fName').value;
+      const company = document.getElementById('fCompany').value;
+      const email = document.getElementById('fEmail').value;
+      const website = document.getElementById('fWebsite').value;
+      const projectType = document.getElementById('fProjectType').value;
+      const ongoing = document.getElementById('fOngoing').value;
+      const desc = document.getElementById('fDesc').value;
 
-      const body = `PROJECT INQUIRY:
-Brand: ${brand}
-Website: ${url}
-Contact Email: ${email}
-Preferred Contact Way: ${pref}
-Selected Package: ${scope}
+      const body = `PROJECT ENQUIRY:
+Name: ${name}
+Company / Brand: ${company}
+Business Email: ${email}
+Website: ${website}
+Project Type: ${projectType}
+Ongoing CGI Production: ${ongoing}
 
-Project Details:
-${notes}
+Brief Project Description:
+${desc}
 `;
 
       navigator.clipboard.writeText(body).then(() => {
         const toast = document.getElementById('toastPill');
-        toast.style.display = 'block';
-        setTimeout(() => { toast.style.display = 'none'; }, 4000);
+        if (toast) {
+          toast.style.display = 'block';
+          setTimeout(() => { toast.style.display = 'none'; }, 4000);
+        }
       });
 
-      const mailto = `mailto:sdewthuru@gmail.com?subject=${encodeURIComponent("New Project Inquiry from " + brand)}&body=${encodeURIComponent(body)}`;
+      const mailto = `mailto:sdewthuru@gmail.com?subject=${encodeURIComponent("New Project Enquiry from " + company + " (" + name + ")")}&body=${encodeURIComponent(body)}`;
       window.location.href = mailto;
     }
   </script>
