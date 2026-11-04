@@ -449,9 +449,36 @@
     .video-holder.square {
       aspect-ratio: 1 / 1;
     }
-    .video-holder.vertical-reel {
-      aspect-ratio: 9 / 16;
-      border-radius: 8px;
+    /* 4:5 Instagram portrait ratio (1080x1350) for perfect fit without zooming/cropping */
+    .video-holder.portrait-ad {
+      aspect-ratio: 4 / 5;
+    }
+    .video-holder video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Compact 6-card grid for Campaign Launch (takes 1 screen instead of 2!) */
+    .campaign-compact-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 16px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    @media (max-width: 1100px) {
+      .campaign-compact-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+    }
+    @media (max-width: 640px) {
+      .campaign-compact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
     }
     .video-holder video {
       width: 100%;
@@ -1412,11 +1439,11 @@
 
       </div>
 
-      <!-- Packaging Videos Row -->
+      <!-- Packaging Videos Row (Square 1:1 to prevent cropping) -->
       <div class="media-grid-3" style="margin-bottom: 36px;">
         
         <div class="media-card">
-          <div class="video-holder">
+          <div class="video-holder square">
             <video autoplay muted loop playsinline poster="thumbnails/BlossomHQ_mid.jpg">
               <source src="05_Packaging_Box_Unboxing/BlossomHQ.mp4" type="video/mp4">
             </video>
@@ -1431,7 +1458,7 @@
         </div>
 
         <div class="media-card">
-          <div class="video-holder">
+          <div class="video-holder square">
             <video autoplay muted loop playsinline poster="thumbnails/VissenHQ_mid.jpg">
               <source src="05_Packaging_Box_Unboxing/VissenHQ.mp4" type="video/mp4">
             </video>
@@ -1446,7 +1473,7 @@
         </div>
 
         <div class="media-card">
-          <div class="video-holder">
+          <div class="video-holder square">
             <video autoplay muted loop playsinline poster="thumbnails/BlossomHQ_mid.jpg">
               <source src="05_Packaging_Box_Unboxing/Schermafbeelding V3HQ.mp4" type="video/mp4">
             </video>
@@ -1548,7 +1575,7 @@
     </div>
   </section>
 
-  <!-- SECTION: CAMPAIGN LAUNCH ANIMATIONS (CLEAN BENTO GRID - NO EXPLAINER TEXT) -->
+  <!-- SECTION: CAMPAIGN LAUNCH ANIMATIONS (COMPACT 4:5 NATIVE ASPECT RATIO) -->
   <section id="campaign-launch">
     <div class="container">
       <div class="section-head">
@@ -1556,10 +1583,10 @@
         <h2 class="section-title">Campaign Launch Animations</h2>
       </div>
 
-      <div class="media-grid-3">
+      <div class="campaign-compact-grid">
         
         <div class="media-card">
-          <div class="video-holder vertical-reel">
+          <div class="video-holder portrait-ad">
             <video autoplay muted loop playsinline poster="thumbnails/Animation01_HQ_mid.jpg">
               <source src="02_Campaign_Launch_Animations/Animation01_HQ.mp4" type="video/mp4">
             </video>
@@ -1567,7 +1594,7 @@
         </div>
 
         <div class="media-card">
-          <div class="video-holder vertical-reel">
+          <div class="video-holder portrait-ad">
             <video autoplay muted loop playsinline poster="thumbnails/Camp01_2s.jpg">
               <source src="02_Campaign_Launch_Animations/Animation01R_HQ.mp4" type="video/mp4">
             </video>
@@ -1575,7 +1602,7 @@
         </div>
 
         <div class="media-card">
-          <div class="video-holder vertical-reel">
+          <div class="video-holder portrait-ad">
             <video autoplay muted loop playsinline poster="thumbnails/Animation02_HQ_mid.jpg">
               <source src="02_Campaign_Launch_Animations/Animation02_HQ.mp4" type="video/mp4">
             </video>
@@ -1583,7 +1610,7 @@
         </div>
 
         <div class="media-card">
-          <div class="video-holder vertical-reel">
+          <div class="video-holder portrait-ad">
             <video autoplay muted loop playsinline poster="thumbnails/Animation04_HQ_mid.jpg">
               <source src="02_Campaign_Launch_Animations/Animation04R_HQ.mp4" type="video/mp4">
             </video>
@@ -1591,7 +1618,7 @@
         </div>
 
         <div class="media-card">
-          <div class="video-holder vertical-reel">
+          <div class="video-holder portrait-ad">
             <video autoplay muted loop playsinline poster="thumbnails/MugAnimation_01_mid.jpg">
               <source src="02_Campaign_Launch_Animations/MugAnimation_01.mp4" type="video/mp4">
             </video>
@@ -1599,7 +1626,7 @@
         </div>
 
         <div class="media-card">
-          <div class="video-holder vertical-reel">
+          <div class="video-holder portrait-ad">
             <video autoplay muted loop playsinline poster="thumbnails/MugAnimation_01_mid.jpg">
               <source src="02_Campaign_Launch_Animations/MugAnimation_03.mp4" type="video/mp4">
             </video>
